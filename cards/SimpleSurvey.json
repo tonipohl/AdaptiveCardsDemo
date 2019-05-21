@@ -1,0 +1,71 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://atworkwebslogicapps.blob.core.windows.net/newsletter/banner18.png"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Rate your AC experience",
+            "size": "Large"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "rate it",
+            "choices": [
+                {
+                    "title": "Awesome",
+                    "value": "1"
+                },
+                {
+                    "title": "Cool",
+                    "value": "2"
+                },
+                {
+                    "title": "Amazing",
+                    "value": "3"
+                }
+            ],
+            "style": "expanded",
+            "id": "rating",
+            "value": "1",
+            "separator": true,
+            "validation": {
+                "necessity": "Required"
+            },
+            "title": "Pls. select"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Why is itamazing?"
+                },
+                {
+                    "type": "Input.Text",
+                    "placeholder": "Why?",
+                    "id": "amazingtext"
+                }
+            ],
+            "id": "containeramazing",
+            "$when": "{rating.value = 3}"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Send to https://messagecardplayground.azurewebsites.net/"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "actions": [
+        {
+            "type": "Action.Http",
+            "title": "Submit",
+            "body": "{\"rating\": \"{{rating.value}}\"}",
+            "url": "https://<somehttpendpoint>.azurewebsites.net/api/SendRatingResponse?code=<somecode>",
+            "method": "POST"
+        }
+    ]
+}
