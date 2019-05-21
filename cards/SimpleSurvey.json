@@ -4,7 +4,7 @@
     "body": [
         {
             "type": "Image",
-            "url": "https://atworkwebslogicapps.blob.core.windows.net/newsletter/banner18.png"
+            "url": "https://<somestorageaccount>.blob.core.windows.net/newsletter/banner1.png"
         },
         {
             "type": "TextBlock",
@@ -55,7 +55,7 @@
         },
         {
             "type": "TextBlock",
-            "text": "Send to https://messagecardplayground.azurewebsites.net/"
+            "text": "Copy to https://messagecardplayground.azurewebsites.net/"
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
