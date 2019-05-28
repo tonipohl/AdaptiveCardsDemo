@@ -13,17 +13,17 @@
         "startGroup": true,
         "title": "**Pending approval**",
         "activityImage": "http://connectorsdemo.azurewebsites.net/images/MSC12_Oscar_002.jpg",
-        "activityTitle": "Requested by **Miguel Garcia**",
-        "activitySubtitle": "m.garcia@contoso.com",
+        "activityTitle": "Requested by **Toni Pohl**",
+        "activitySubtitle": "admin@M365x321500.onmicrosoft.com",
         "facts":
         [
           {
             "name": "Date submitted:",
-            "value": "06/27/2017, 2:44 PM"
+            "value": "05/26/2019, 2:44 PM"
           },
           {
             "name": "Details:",
-            "value": "Please approve this expense report for **$123.45**."
+            "value": "Please approve this expense report for **$120.00**."
           },
           {
             "name": "Link:",
