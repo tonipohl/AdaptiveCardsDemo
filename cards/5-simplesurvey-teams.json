@@ -1,0 +1,52 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://atworkwebslogicapps.blob.core.windows.net/newsletter/banner21.png"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Rate your AC experience from Teams\nat @{utcnow('O')}",
+            "size": "Large"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "rate it",
+            "choices": [
+                {
+                    "title": "Awesome",
+                    "value": "1"
+                },
+                {
+                    "title": "Cool",
+                    "value": "2"
+                },
+                {
+                    "title": "Amazing",
+                    "value": "3"
+                }
+            ],
+            "style": "expanded",
+            "id": "rating",
+            "value": "1",
+            "separator": true,
+            "validation": {
+                "necessity": "Required"
+            }
+        },
+        {
+            "type": "TextBlock",
+            "text": "Thank you for your feedback."
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Submit",
+            "url": "https://adaptivecardratingcs.azurewebsites.net/api/RateResponse?code=zE9aIUbpeWFMaGvzUCWGj8n9L6OaRo3NXktaTOe0Mrw61YLhCBsM5A==&rating={rating.value}&id=something"
+        }
+    ]
+}

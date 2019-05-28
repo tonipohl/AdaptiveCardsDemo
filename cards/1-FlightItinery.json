@@ -1,0 +1,181 @@
+{
+	"$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+	"version": "1.0",
+	"type": "AdaptiveCard",
+	"speak": "<s>Your flight is confirmed for you and 1 other passengers from Las Vegas to Vienna on Friday, May 23 8:30 AM</s>",
+	"body": [
+		{
+			"type": "ColumnSet",
+			"columns": [
+				{
+					"width": "stretch",
+					"verticalContentAlignment": "center",
+					"items": [
+						{
+							"type": "TextBlock",
+							"size": "medium",
+							"text": "**FLIGHT ITINERARY - CONTOSO AIR**"
+						},
+						{
+							"type": "TextBlock",
+							"spacing": "none",
+							"text": "Passenger: Toni Pohl",
+							"isSubtle": true
+						}
+					]
+				},
+				{
+					"width": "auto",
+					"items": [
+						{
+							"type": "Image",
+							"width": "48px",
+							"url": "https://acdesignerbeta.azurewebsites.net/assets/Airplane_Co_Ico.png",
+							"altText": "Airline Logo"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "TextBlock",
+			"text": "1 Stop",
+			"weight": "bolder",
+			"spacing": "medium"
+		},
+		{
+			"type": "TextBlock",
+			"text": "Fri, May 24 8:30 AM",
+			"weight": "bolder",
+			"spacing": "none"
+		},
+		{
+			"type": "ColumnSet",
+			"separator": true,
+			"columns": [
+				{
+					"type": "Column",
+					"width": 1,
+					"items": [
+						{
+							"type": "TextBlock",
+							"text": "Los Angeles",
+							"isSubtle": true
+						},
+						{
+							"type": "TextBlock",
+							"size": "extraLarge",
+							"color": "accent",
+							"text": "LAX",
+							"spacing": "none"
+						}
+					]
+				},
+				{
+					"type": "Column",
+					"width": "auto",
+					"verticalContentAlignment": "bottom",
+					"items": [
+						{
+							"type": "Image",
+							"url": "https://acdesignerbeta.azurewebsites.net/assets/Airplane_Ico.png",
+							"size": "small",
+							"spacing": "none",
+							"altText": "to"
+						}
+					]
+				},
+				{
+					"type": "Column",
+					"width": 1,
+					"items": [
+						{
+							"type": "TextBlock",
+							"horizontalAlignment": "right",
+							"text": "Munich",
+							"isSubtle": true
+						},
+						{
+							"type": "TextBlock",
+							"horizontalAlignment": "right",
+							"size": "extraLarge",
+							"color": "accent",
+							"text": "MUC",
+							"spacing": "none"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "TextBlock",
+			"text": "Non-Stop",
+			"weight": "bolder",
+			"spacing": "medium"
+		},
+		{
+			"type": "TextBlock",
+			"text": "Sat, May 25 10:30 PM",
+			"weight": "bolder",
+			"spacing": "none"
+		},
+		{
+			"type": "ColumnSet",
+			"separator": true,
+			"columns": [
+				{
+					"type": "Column",
+					"width": 1,
+					"items": [
+						{
+							"type": "TextBlock",
+							"text": "Munich",
+							"isSubtle": true
+						},
+						{
+							"type": "TextBlock",
+							"size": "extraLarge",
+							"color": "accent",
+							"text": "MUC",
+							"spacing": "none"
+						}
+					]
+				},
+				{
+					"type": "Column",
+					"width": "auto",
+					"verticalContentAlignment": "bottom",
+					"items": [
+						{
+							"type": "Image",
+							"url": "https://acdesignerbeta.azurewebsites.net/assets/Airplane_Ico.png",
+							"size": "small",
+							"spacing": "none",
+							"altText": "to"
+						}
+					]
+				},
+				{
+					"type": "Column",
+					"width": 1,
+					"items": [
+						{
+							"type": "TextBlock",
+							"horizontalAlignment": "right",
+							"text": "Vienna",
+							"isSubtle": true
+						},
+						{
+							"type": "TextBlock",
+							"horizontalAlignment": "right",
+							"size": "extraLarge",
+							"color": "accent",
+							"text": "VIE",
+							"spacing": "none"
+						}
+					]
+				}
+			]
+		}
+	]
+}
